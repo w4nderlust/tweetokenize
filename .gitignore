@@ -4,3 +4,4 @@ build
 bench
 tweetokenize.iml
 .idea
+venv
