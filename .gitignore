@@ -1,5 +1,6 @@
 .DS_Store
 *.pyc
-.gitignore
 build
 bench
+tweetokenize.iml
+.idea
