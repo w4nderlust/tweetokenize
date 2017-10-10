@@ -82,7 +82,7 @@ class Tokenizer(object):
     phonenumbers_re = re.compile(r"(?:\+?[01][\-\s\.]*)?(?:\(?\d{3}[\-\s\.\)]*)?\d{3}[\-\s\.]*\d{4}(?:\s*x\s*\d+)?"
                                  "(?=\s+|$)")
 
-    _number_re_ = r"(?:[+-]?\$?\d+(?:\.\d+)?(?:[eE]-?\d+)?%?)(?![A-Za-z])"
+    _number_re_ = r"(?:[+-]?\$?\d+(?:\.\d+)?(?:[eE]-?\d+)?%?)(?![A-Za-z0-9])"
     numbers_re = re.compile(r"{0}(?:\s*/\s*{0})?".format(_number_re_))  # deals with fractions
 
     # other_re = r"(?:[^#\s\.]|\.(?!\.))+"
